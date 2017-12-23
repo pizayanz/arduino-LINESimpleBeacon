@@ -1,6 +1,6 @@
 # LINE Simple Beacon with BBC micro:bit
 
-みんな大好き、 micro:bit を LINE Sinmple Beacon 化するライブラリをつくってみました。
+みんな大好き、 micro:bit を LINE Simple Beacon 化するライブラリをつくってみました。
 
   - http://microbit.org/
   - https://www.switch-science.com/catalog/3380/
