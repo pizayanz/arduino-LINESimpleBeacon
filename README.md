@@ -4,7 +4,7 @@ An Arduino library for creating LINE Simple Beacon with Nordic Semiconductor's n
 
 これは、BBC micro:bit を、LINE Simple Beacon 化するためのライブラリになります
 
-## Install と サンプルプログラムの実行方法￥
+## Install (開発環境設定) と サンプルプログラムの実行方法
 
 ### micro:bit を arduino として使います
 
