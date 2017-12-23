@@ -25,12 +25,13 @@ BBC micro:bit を、LINE Simple Beacon 化するためのライブラリにな�
 2. [検索をフィルタ] に "BLEPeripheral" と入力してください
 3. BLEPeripheral by Sandeep Mistry が表示されたら、それを選んでインストールをクリックしてください
 
-### SoftDevice の導入手順
+### SoftDevice の書き込み
 
 micro:bit は、Nordic の nRF5x シリーズの BLEチップが搭載されています。
-このチップには SoftDevice というものをインストールする必要があります。
+このチップのBLE機能を利用するには SoftDevice というファームウェアのようなイメージを書き込む必要があります。
 
-1. スケッチブックの保存フォルダを Explorer や Finder で開きます [ファイル] > [環境設定] にあります。
+1. Arduino IDE のスケッチブックの標準の保存フォルダを Explorer(PC) や Finder(Mac) で開きます 
+  - [ファイル] > [環境設定] にあります。
 2. そこに tools\nRF5FlashSoftDevice\tool\ というフォルダを作ります 
   - 三階層分作ってください。tools, nRF5FlashSoftDevice, tool
 3. nRF5FlashSoftDevice.jar をダウンロードし、作った tool フォルダにコピーします
