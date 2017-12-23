@@ -1,8 +1,8 @@
 # LINE Simple Beacon with BBC micro:bit
 
-An Arduino library for creating LINE Simple Beacon with Nordic Semiconductor's nRF8001 or nR51822 especially BBC micro:bit
+みんなだいすき、ひとり数十台持っている！？かもしれない micro:bit を LINE Sinmple Beacon 化するライブラリをつくってみました。
 
-これは、BBC micro:bit を、LINE Simple Beacon 化するためのライブラリになります
+BBC micro:bit を、LINE Simple Beacon 化するためのライブラリになります
 
 ## Install (開発環境設定) と サンプルプログラムの実行方法
 
