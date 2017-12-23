@@ -10,10 +10,19 @@ BBC micro:bit を、LINE Simple Beacon 化するためのライブラリにな�
 
 ## Install (開発環境設定) と サンプルプログラムの実行方法
 
-### micro:bit を arduino として使います
+### 基本方針 micro:bit を arduino として使う
 
-1. Arduino IDE をインストールし、起動します (1.8.5で試しました)
-  - 環境によっての設定は、Arduino のサイトを参考にしてください
+micro:bit を arduino として使いますので、Arduino IDE が必要になります
+
+1. Arduino IDE をインストールしてください (1.8.5 で試しました)
+  - https://www.arduino.cc/en/Main/Software
+  - PC/Mac 等環境によっての設定は、Arduino のサイトを参考にしてください
+
+### Arduino で、nRF5x を利用できるようにします
+
+micro:bit は、Nordic の nRF5x シリーズの BLEチップが搭載されています
+
+1. Arduino IDE を起動します
 2. メニュー [ファイル] > [環境設定] で "追加のボードマネージャの URL" に次のURLを追加してください
   - https://sandeepmistry.github.io/arduino-nRF5/package_nRF5_boards_index.json
 3. メニュー [ツール] > [ボード] > [ボードマネーシャ] を選んでください
@@ -27,17 +36,18 @@ BBC micro:bit を、LINE Simple Beacon 化するためのライブラリにな�
 
 ### SoftDevice の書き込み
 
-micro:bit は、Nordic の nRF5x シリーズの BLEチップが搭載されています。
-このチップのBLE機能を利用するには SoftDevice というファームウェアのようなイメージを書き込む必要があります。
+micro:bit は、Nordic の nRF5x シリーズの BLEチップが搭載されています
+
+このチップのBLE機能を利用するには SoftDevice というファームウェアのようなイメージを書き込む必要があります
 
 1. Arduino IDE のスケッチブックの標準の保存フォルダを Explorer(PC) や Finder(Mac) で開きます 
-  - [ファイル] > [環境設定] にあります。
+  - 'スケッチブックの標準の保存フォルダ' は、メニュー [ファイル] > [環境設定] で調べられます
 2. そこに tools\nRF5FlashSoftDevice\tool\ というフォルダを作ります 
   - 三階層分作ってください。tools, nRF5FlashSoftDevice, tool
 3. nRF5FlashSoftDevice.jar をダウンロードし、作った tool フォルダにコピーします
   - https://github.com/sandeepmistry/arduino-nRF5/releases/download/tools/nRF5FlashSoftDevice.jar
 4. Arduino IDE を再起動します
-5. micro:bit を USBケーブルで PC/Mac と接続します。
+5. micro:bit を USBケーブルで PC/Mac と接続します
 6. [ツール] > [SoftDevice] で "S130" を選択します (S110 でも ビーコンは動くようです)
 7. [ツール] > [書き込み装置] で "CMSIS-DAP" を選択します
 8. [ツール] > [シリアルポート] で "BBC micro:bit" っぽいものを選択します
